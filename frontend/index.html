@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080b18" />
+  <title>MeritSphere | Student Ranking & Merit List Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#home" aria-label="MeritSphere home">
+      <span class="brand-mark">♛</span>
+      <span class="brand-copy"><strong>MeritSphere</strong><small>TRACK · RANK · EXCEL</small></span>
+    </a>
+
+    <div class="side-label">WORKSPACE</div>
+    <nav class="side-nav" aria-label="Main navigation">
+      <a class="nav-link active" href="#home" data-section="home"><span class="nav-icon">⌂</span><span>Overview</span></a>
+      <a class="nav-link" href="#students" data-section="students"><span class="nav-icon">♙</span><span>Student Tracking</span></a>
+      <a class="nav-link" href="#merit" data-section="merit"><span class="nav-icon">♜</span><span>Merit List</span></a>
+      <a class="nav-link" href="#analytics" data-section="analytics"><span class="nav-icon">▥</span><span>Analytics</span></a>
+      <a class="nav-link" href="#algorithm" data-section="algorithm"><span class="nav-icon">⌘</span><span>Algorithm Lab</span></a>
+    </nav>
+
+    <div class="sidebar-note">
+      <span class="note-crown">♛</span>
+      <p>Greatness is built<br>one result at a time.</p>
+      <span class="note-line"></span>
+      <small>ACADEMIC EXCELLENCE</small>
+    </div>
+
+    <div class="sidebar-bottom">
+      <span class="status-dot"></span>
+      <span>Frontend preview</span>
+      <span class="preview-pill">DEMO</span>
+    </div>
+  </aside>
+
+  <main class="main-area" id="home">
+    <header class="topbar">
+      <button class="mobile-menu" id="mobileMenu" aria-label="Toggle navigation">☰</button>
+      <div class="breadcrumb"><span>Workspace</span><b>/</b><strong id="currentPage">Overview</strong></div>
+      <div class="top-actions">
+        <label class="search-box"><span>⌕</span><input id="globalSearch" type="search" placeholder="Search students..." aria-label="Search students"></label>
+        <button class="icon-button" id="themeGlow" title="Toggle ambient glow" aria-label="Toggle ambient glow">✦</button>
+        <button class="profile-button" title="Demo administrator"><span class="avatar">A</span><span class="profile-name">Administrator</span><span class="chevron">⌄</span></button>
+      </div>
+    </header>
+
+    <section class="hero panel" aria-labelledby="heroTitle">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="eyebrow-line"></span> THE ACADEMIC COMMAND CENTER</div>
+        <h1 id="heroTitle">Student Ranking &amp;<br><span>Merit List Generator</span></h1>
+        <p class="hero-description">A smarter way to track progress, celebrate achievement, and turn student data into meaningful insight.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#students">Explore students <span>↗</span></a>
+          <a class="button button-ghost" href="#algorithm">Discover the algorithms</a>
+        </div>
+        <div class="hero-footnote"><span class="sparkle">✧</span> Built for clarity. Designed for excellence.</div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-halo"></div>
+        <div class="art-crown">♛</div>
+        <div class="book book-back"></div><div class="book book-mid"></div><div class="book book-front"><span>EXCELLENCE</span></div>
+        <div class="art-laurel">❧</div>
+        <div class="art-stars">✦ <span>✧</span> · ✦</div>
+      </div>
+      <div class="hero-watermark">MS</div>
+    </section>
+
+    <section class="section-heading">
+      <div><span class="eyebrow">YOUR WORKSPACE</span><h2>Everything, at a glance.</h2></div>
+      <span class="date-chip"><span class="status-dot"></span> Academic overview <b>·</b> Demo data</span>
+    </section>
+
+    <section class="feature-grid" aria-label="Main features">
+      <a class="feature-card feature-blue" href="#students">
+        <div class="feature-top"><span class="feature-icon">♙</span><span class="card-arrow">↗</span></div>
+        <span class="feature-kicker">01 / MONITOR</span>
+        <h3>Student Tracking</h3>
+        <p>Manage student profiles, marks, and academic progress in one place.</p>
+        <span class="feature-link">Manage records <span>→</span></span>
+        <div class="feature-glow"></div>
+      </a>
+      <a class="feature-card feature-gold" href="#merit">
+        <div class="feature-top"><span class="feature-icon">♜</span><span class="card-arrow">↗</span></div>
+        <span class="feature-kicker">02 / RECOGNIZE</span>
+        <h3>Merit List</h3>
+        <p>Turn marks into clear, consistent rankings with fair tie handling.</p>
+        <span class="feature-link">View rankings <span>→</span></span>
+        <div class="feature-glow"></div>
+      </a>
+      <a class="feature-card feature-violet" href="#analytics">
+        <div class="feature-top"><span class="feature-icon">▥</span><span class="card-arrow">↗</span></div>
+        <span class="feature-kicker">03 / UNDERSTAND</span>
+        <h3>Performance Analytics</h3>
+        <p>Explore class averages, top scores, and trends at a glance.</p>
+        <span class="feature-link">Explore insights <span>→</span></span>
+        <div class="feature-glow"></div>
+      </a>
+      <a class="feature-card feature-teal" href="#algorithm">
+        <div class="feature-top"><span class="feature-icon">⌘</span><span class="card-arrow">↗</span></div>
+        <span class="feature-kicker">04 / EXPERIMENT</span>
+        <h3>Algorithm Lab</h3>
+        <p>Compare Merge Sort and Quick Sort using measurable results.</p>
+        <span class="feature-link">Enter the lab <span>→</span></span>
+        <div class="feature-glow"></div>
+      </a>
+    </section>
+
+    <section class="content-grid">
+      <div class="panel stats-panel" id="analytics">
+        <div class="panel-heading"><div><span class="eyebrow">THE BIG PICTURE</span><h2>Quick statistics</h2></div><span class="panel-icon">✧</span></div>
+        <div class="stats-grid">
+          <article class="stat-card"><span class="stat-label">Total students</span><div class="stat-row"><strong id="totalStudents">120</strong><span class="stat-icon blue">♙</span></div><small><span class="trend">↗ 8.4%</span> <span class="muted">from last term</span></small></article>
+          <article class="stat-card"><span class="stat-label">Class average</span><div class="stat-row"><strong>82.6<span class="unit">%</span></strong><span class="stat-icon violet">◈</span></div><small><span class="trend">↗ 2.1%</span> <span class="muted">from last term</span></small></article>
+          <article class="stat-card"><span class="stat-label">Highest score</span><div class="stat-row"><strong>98.7<span class="unit">%</span></strong><span class="stat-icon gold">♛</span></div><small><span class="trend">↗ 1.3%</span> <span class="muted">new high</span></small></article>
+          <article class="stat-card"><span class="stat-label">Pass percentage</span><div class="stat-row"><strong>94.2<span class="unit">%</span></strong><span class="stat-icon teal">✓</span></div><small><span class="trend">↗ 3.4%</span> <span class="muted">from last term</span></small></article>
+        </div>
+        <div class="mini-chart">
+          <div class="chart-copy"><strong>Academic momentum</strong><span>Illustrative class average by month</span></div>
+          <div class="chart-bars" aria-label="Illustrative class average trend">
+            <div class="bar-wrap"><span class="bar" style="--bar-height:42%"></span><small>Jan</small></div>
+            <div class="bar-wrap"><span class="bar" style="--bar-height:54%"></span><small>Feb</small></div>
+            <div class="bar-wrap"><span class="bar" style="--bar-height:49%"></span><small>Mar</small></div>
+            <div class="bar-wrap"><span class="bar" style="--bar-height:67%"></span><small>Apr</small></div>
+            <div class="bar-wrap"><span class="bar" style="--bar-height:62%"></span><small>May</small></div>
+            <div class="bar-wrap"><span class="bar active" style="--bar-height:83%"></span><small>Jun</small></div>
+            <div class="bar-wrap"><span class="bar" style="--bar-height:92%"></span><small>Jul</small></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel activity-panel">
+        <div class="panel-heading"><div><span class="eyebrow">LATEST UPDATES</span><h2>Recent activity</h2></div><button class="text-button" id="viewActivity">View all <span>↗</span></button></div>
+        <div class="activity-list" id="activityList">
+          <div class="activity-item"><span class="activity-icon green">＋</span><div><strong>New student profile added</strong><small>Aarav Sharma · CSE</small></div><time>2h ago</time></div>
+          <div class="activity-item"><span class="activity-icon violet">✎</span><div><strong>Academic record updated</strong><small>Diya Patel · Semester 3</small></div><time>3h ago</time></div>
+          <div class="activity-item"><span class="activity-icon gold">♜</span><div><strong>Merit list preview generated</strong><small>Semester 3 · CSE</small></div><time>4h ago</time></div>
+          <div class="activity-item"><span class="activity-icon blue">⇩</span><div><strong>Export center ready</strong><small>CSV and print views planned</small></div><time>5h ago</time></div>
+        </div>
+        <div class="activity-footer"><span class="tiny-dot"></span> You're viewing sample activity <span class="footer-spacer"></span><span>All systems calm</span></div>
+      </div>
+    </section>
+
+    <section class="lower-grid">
+      <div class="panel journey-panel">
+        <div class="journey-content"><span class="eyebrow">YOUR NEXT CHAPTER</span><h2>Make every mark<br>mean something.</h2><p>Build a clearer picture of student achievement with ranking tools and algorithm-powered insights.</p><a class="button button-gold button-small" href="#algorithm">Explore the Algorithm Lab <span>→</span></a></div>
+        <div class="journey-emblem" aria-hidden="true"><span>♛</span><i></i><b>EXCEL</b></div>
+      </div>
+      <div class="panel algorithm-preview" id="algorithm">
+        <div class="panel-heading"><div><span class="eyebrow">BUILT ON ALGORITHMS</span><h2>The sorting chamber</h2></div><span class="algorithm-symbol">⌘</span></div>
+        <div class="algorithm-row"><span class="algo-badge merge">M</span><div><strong>Merge Sort</strong><small>Stable · O(n log n) in all cases</small></div><span class="algo-tag">STABLE</span></div>
+        <div class="algorithm-row"><span class="algo-badge quick">Q</span><div><strong>Quick Sort</strong><small>In-place · O(n log n) average</small></div><span class="algo-tag violet-tag">FAST AVERAGE</span></div>
+        <button class="button button-ghost button-wide" id="benchmarkButton">Preview comparison <span>→</span></button>
+        <p class="demo-note" id="benchmarkNote">Benchmark results will be connected to the C engine in a later milestone.</p>
+      </div>
+    </section>
+
+    <section class="panel students-panel" id="students">
+      <div class="panel-heading student-heading"><div><span class="eyebrow">STUDENT DIRECTORY</span><h2>All student records</h2></div><button class="button button-ghost button-small" id="addStudentButton">＋ Add student</button></div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>STUDENT</th><th>ROLL NUMBER</th><th>BRANCH</th><th>MARKS</th><th>STATUS</th></tr></thead>
+          <tbody id="studentTable">
+            <tr data-name="Aarav Sharma" data-roll="221CS045"><td><span class="student-cell"><span class="student-avatar avatar-blue">AS</span><span><strong>Aarav Sharma</strong><small>Semester 3</small></span></span></td><td>221CS045</td><td>CSE</td><td><strong>94.8%</strong></td><td><span class="status-badge excellent">Excellent</span></td></tr>
+            <tr data-name="Diya Patel" data-roll="221CS012"><td><span class="student-cell"><span class="student-avatar avatar-violet">DP</span><span><strong>Diya Patel</strong><small>Semester 3</small></span></span></td><td>221CS012</td><td>CSE</td><td><strong>92.4%</strong></td><td><span class="status-badge excellent">Excellent</span></td></tr>
+            <tr data-name="Ishaan Reddy" data-roll="221EC031"><td><span class="student-cell"><span class="student-avatar avatar-gold">IR</span><span><strong>Ishaan Reddy</strong><small>Semester 3</small></span></span></td><td>221EC031</td><td>ECE</td><td><strong>88.9%</strong></td><td><span class="status-badge good">On track</span></td></tr>
+            <tr data-name="Meera Rao" data-roll="221IT008"><td><span class="student-cell"><span class="student-avatar avatar-teal">MR</span><span><strong>Meera Rao</strong><small>Semester 3</small></span></span></td><td>221IT008</td><td>IT</td><td><strong>85.6%</strong></td><td><span class="status-badge good">On track</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-footer"><span id="visibleCount">Loading student records…</span><div class="pagination"><button id="prevPage" class="button button-ghost button-small" type="button">← Previous</button><span id="pageInfo">Page 1</span><button id="nextPage" class="button button-ghost button-small" type="button">Next →</button></div><a href="#merit" class="text-button">Open merit list <span>→</span></a></div>
+    </section>
+
+    <section class="panel merit-panel" id="merit">
+      <div class="panel-heading"><div><span class="eyebrow">RANK · RECOGNIZE · CELEBRATE</span><h2>Merit list preview</h2></div><span class="demo-label" id="meritCount">LIVE RANKINGS</span></div>
+      <div class="podium">
+        <div class="podium-student second"><span class="podium-medal">Ⅱ</span><span class="podium-avatar">DP</span><strong>Diya Patel</strong><small>92.4%</small><div class="podium-base">02</div></div>
+        <div class="podium-student first"><span class="crown-mini">♛</span><span class="podium-medal">Ⅰ</span><span class="podium-avatar">AS</span><strong>Aarav Sharma</strong><small>94.8%</small><div class="podium-base">01</div></div>
+        <div class="podium-student third"><span class="podium-medal">Ⅲ</span><span class="podium-avatar">IR</span><strong>Ishaan Reddy</strong><small>88.9%</small><div class="podium-base">03</div></div>
+      </div>
+      <p class="demo-note centered" id="meritNote">Ranks are calculated from all saved records by the C backend.</p><div class="table-wrap merit-table-wrap"><table><thead><tr><th>RANK</th><th>STUDENT</th><th>ROLL NUMBER</th><th>BRANCH</th><th>MARKS</th></tr></thead><tbody id="meritTable"></tbody></table></div>
+    </section>
+
+    <footer class="footer"><a class="footer-brand" href="#home"><span>♛</span> MeritSphere</a><span>Student Ranking &amp; Merit List Generator</span><span class="footer-right">A royal experience for academic excellence <b>✦</b></span></footer>
+  </main>
+
+  <dialog id="studentDialog" class="student-dialog">
+    <form id="studentForm" method="dialog">
+      <div class="dialog-heading"><div><span class="eyebrow">STUDENT DIRECTORY</span><h2>Add student record</h2></div><button type="button" class="close-dialog" id="closeDialog" aria-label="Close">×</button></div>
+      <label>Full name<input id="studentName" name="studentName" required maxlength="60" placeholder="e.g. Ananya Kumar"></label>
+      <label>Roll number<input id="studentRoll" name="studentRoll" required maxlength="24" placeholder="e.g. 221CS099"></label>
+      <div class="form-pair"><label>Branch<select id="studentBranch"><option>CSE</option><option>ECE</option><option>IT</option><option>EEE</option><option>MECH</option><option>CIVIL</option></select></label><label>Percentage<input id="studentMarks" type="number" min="0" max="100" step="0.1" required placeholder="0–100"></label></div>
+      <p class="demo-note">This record will be saved to the project CSV file and included in rankings.</p>
+      <button class="button button-gold button-wide" type="submit">Save student <span>→</span></button>
+    </form>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
